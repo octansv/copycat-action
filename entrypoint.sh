@@ -141,8 +141,9 @@ if [ "$CLEAN" = "true" ]; then
 fi
 
 mkdir -p "${DST_REPO_DIR}/${DST_PATH%/*}" || exit "$?"
-sed -i -- 's/module.exports =/export default/g' "${FINAL_SOURCE}" || exit "$?"
 cp -rf "${FINAL_SOURCE}" "${DST_REPO_DIR}/${DST_PATH}" || exit "$?"
+echo "asd ${DST_REPO_DIR}/${DST_PATH}";
+sed -i 's/module.exports =/export default/g' "${DST_REPO_DIR}/${DST_PATH}"
 cd "${DST_REPO_DIR}" || exit "$?"
 
 if [[ -z "${COMMIT_MESSAGE}" ]]; then
