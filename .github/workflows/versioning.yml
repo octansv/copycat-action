@@ -1,4 +1,4 @@
-name: Update version tag
+name: Update version tag (OP)
 
 on:
   release:
