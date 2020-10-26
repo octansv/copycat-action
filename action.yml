@@ -1,4 +1,4 @@
-name: 'Copycat Action'
+name: 'Copycat Action (OctansV)'
 description: 'GitHub Action for copying files to other repositories'
 author: 'André Storhaug'
 branding:
