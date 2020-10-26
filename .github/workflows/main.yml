@@ -1,8 +1,6 @@
 name: Update version tag (OP)
 
-on:
-  release:
-    types: [published]
+on: push
 
 jobs:
   actions-tagger:
